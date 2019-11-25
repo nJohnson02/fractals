@@ -5,7 +5,8 @@ import math
 
 print('Input Fractal in terms of z, reals, and c, complex:')
 FRACTAL = str(input('Z(c) = '))
-WIDTH = int(input('Input Resolution (height): ')) * 2
+ITERATIONS = int(input('Iterations: '))
+WIDTH = int(input('Vertical Resolution: ')) * 2
   
 # a function to return a tuple of colors 
 # as integer value of rgb 
@@ -17,7 +18,7 @@ def rgb_conv(i):
 def mandelbrot(x, y): 
     c = complex(x, y)
     z = 0
-    for i in range(1, 1000): 
+    for i in range(1, ITERATIONS): 
         if abs(z) > 2: 
             return rgb_conv(i) 
         #Fractal Algithym
