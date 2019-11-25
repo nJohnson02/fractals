@@ -3,8 +3,8 @@ from numpy import complex, array
 import colorsys
 import math
 
-print('Input Fractal in terms of c, reals, and c0, complex:')
-FRACTAL = input('c = ')
+print('Input Fractal in terms of z, reals, and c, complex:')
+FRACTAL = str(input('Z(c) = '))
 WIDTH = int(input('Input Resolution (height): ')) * 2
   
 # a function to return a tuple of colors 
@@ -15,13 +15,13 @@ def rgb_conv(i):
   
 # function defining a mandelbrot 
 def mandelbrot(x, y): 
-    c0 = complex(x, y)
-    c = 0
+    c = complex(x, y)
+    z = 0
     for i in range(1, 1000): 
-        if abs(c) > 2: 
+        if abs(z) > 2: 
             return rgb_conv(i) 
         #Fractal Algithym
-        c = eval(FRACTAL)
+        z = eval(FRACTAL)
         #----------------
     return (0, 0, 0) 
   
