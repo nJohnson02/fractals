@@ -4,6 +4,8 @@
 * I would suggest using the fractal Z(c) = z**2 + c with a height of 500 pixels and 1000 iterations for your first try.
 * More iterations make the image more accurate, but take longer to render. 1000 iterations is a good value if your're resolution isn't too crazy.
 
+You can explore a render that took over 130 hours in 12500 x 25000 resolution at: http://www.livepond.net/sites/mandelbrot
+
 NOTE:<br/>
 &nbsp;
 &nbsp;
