@@ -17,6 +17,7 @@ def rgb_conv(i):
 # function defining a mandelbrot 
 def mandelbrot(x, y): 
     c = complex(x, y)
+    c = c
     z = 0
     for i in range(1, ITERATIONS): 
         if abs(z) > 2: 
