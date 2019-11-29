@@ -14,8 +14,8 @@ def rgb_conv(i):
     color = 255 * array(colorsys.hsv_to_rgb(i / 255.0, 1.0, 0.5)) 
     return tuple(color.astype(int)) 
   
-# function defining a mandelbrot 
-def mandelbrot(x, y): 
+# function defining a fractal
+def fractal(x, y): 
     c = complex(x, y)
     c = c
     z = 0
@@ -36,7 +36,7 @@ for x in range(img.size[0]):
     # displaying the progress as percentage 
     print("%.2f %%" % (x / WIDTH * 100.0))  
     for y in range(img.size[1]): 
-        pixels[x, y] = mandelbrot((x - (0.75 * WIDTH)) / (WIDTH / 4), 
+        pixels[x, y] = fractal((x - (0.75 * WIDTH)) / (WIDTH / 4), 
                                       (y - (WIDTH / 4)) / (WIDTH / 4)) 
   
 # to display the created fractal after  
