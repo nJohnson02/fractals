@@ -20,13 +20,18 @@ def fractal(x, y):
     c = c
     z = 0
     for i in range(1, ITERATIONS): 
-        if abs(z) > 2: 
+        if abs(z) > 2:
             return rgb_conv(i) 
         #Fractal Algorithm
         z = eval(FRACTAL)
         #----------------
-    return (0, 0, 0) 
-  
+    return (0, 0, 0)
+"""
+         n
+abs( Σ [z = z*2 + c] ) >= 2
+        i=1
+"""
+
 # creating the new image in RGB mode 
 img = Image.new('RGB', (WIDTH, int(WIDTH / 2))) 
 pixels = img.load() 
