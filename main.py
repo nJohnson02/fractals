@@ -22,7 +22,7 @@ def fractal(x, y):
     for i in range(1, ITERATIONS): 
         if abs(z) > 2: 
             return rgb_conv(i) 
-        #Fractal Algithym
+        #Fractal Algorithm
         z = eval(FRACTAL)
         #----------------
     return (0, 0, 0) 
