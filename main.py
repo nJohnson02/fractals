@@ -10,40 +10,40 @@ WIDTH = int(input('Vertical Resolution: ')) * 2
   
 # a function to return a tuple of colors 
 # as integer value of rgb 
-def rgb_conv(i): 
-    color = 255 * array(colorsys.hsv_to_rgb(i / 255.0, 1.0, 0.5)) 
-    return tuple(color.astype(int)) 
-  
+def rgb_conv(i):
+    color = 255 * array(colorsys.hsv_to_rgb(i / 255.0, 1.0, 0.5))
+    return tuple(color.astype(int))
+
 # function defining a fractal
-def fractal(x, y): 
+def fractal(x, y):
     c = complex(x, y)
     c = c
     z = 0
-    for i in range(1, ITERATIONS): 
+    for i in range(1, ITERATIONS):
         if abs(z) > 2:
-            return rgb_conv(i) 
+            return rgb_conv(i)
         #Fractal Algorithm
         z = eval(FRACTAL)
         #----------------
     return (0, 0, 0)
 """
-         n
+     n
 abs( Σ [z = z*2 + c] ) >= 2
-        i=1
+    i=1
 """
 
 # creating the new image in RGB mode 
-img = Image.new('RGB', (WIDTH, int(WIDTH / 2))) 
-pixels = img.load() 
+img = Image.new('RGB', (WIDTH, int(WIDTH / 2)))
+pixels = img.load()
+
+for x in range(img.size[0]):
+
+    # displaying the progress as percentage
+    print("%.2f %%" % (x / WIDTH * 100.0))
+    for y in range(img.size[1]):
+        pixels[x, y] = fractal((x - (0.75 * WIDTH)) / (WIDTH / 4),
+                                      (y - (WIDTH / 4)) / (WIDTH / 4))
   
-for x in range(img.size[0]): 
-  
-    # displaying the progress as percentage 
-    print("%.2f %%" % (x / WIDTH * 100.0))  
-    for y in range(img.size[1]): 
-        pixels[x, y] = fractal((x - (0.75 * WIDTH)) / (WIDTH / 4), 
-                                      (y - (WIDTH / 4)) / (WIDTH / 4)) 
-  
-# to display the created fractal after  
-# completing the given number of iterations 
+# to display the created fractal after
+# completing the given number of iterations
 img.save("sample.png", "")
