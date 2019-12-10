@@ -26,11 +26,6 @@ def fractal(x, y):
         z = eval(FRACTAL)
         #----------------
     return (0, 0, 0)
-"""
-     n
-abs( Σ [z = z*2 + c] ) >= 2
-    i=1
-"""
 
 # creating the new image in RGB mode 
 img = Image.new('RGB', (WIDTH, int(WIDTH / 2)))
