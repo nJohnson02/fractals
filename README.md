@@ -19,3 +19,5 @@ Another NOTE:<br/>
 &nbsp;
 &nbsp;
 I copy pasted most of the code, so yeah.
+
+<img src="MEGA.png" width="500px" height="200px">
