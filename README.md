@@ -20,4 +20,4 @@ Another NOTE:<br/>
 &nbsp;
 I copy pasted most of the code, so yeah.
 
-<img src="MEGA.png" width="500px" height="200px">
+<img src="MEGA.png" width="500px" height="300px">
