@@ -13,3 +13,5 @@ The python modules: Pillow and NumPy are required for the python script.
 I copy pasted some of the code, so yeah.
 <br/><br/>
 <img src="Renders/MEGA.png" width="600px" height="300px">
+<img src="Renders/EX2.png" width="300px" height="300px">
+<img src="Renders/EX3.png" width="300px" height="300px">
