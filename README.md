@@ -18,6 +18,6 @@ Another NOTE:<br/>
 &nbsp;
 &nbsp;
 &nbsp;
-I copy pasted most of the code, so yeah.
+I copy pasted some of the code, so yeah.
 
 <img src="Examples/MEGA.png" width="600px" height="300px">
