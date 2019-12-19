@@ -12,7 +12,7 @@ The python modules: Pillow and NumPy are required for the python script.
 <br/><br/>
 I copy pasted some of the code, so yeah.
 <br/><br/>
-<img src="Renders/MEGA.png" width="600px" height="300px">
+<img src="Renders/MEGA.png" width="640px" height="300px">
 <table>
   <tr>
     <td><img src="Renders/EX1.png" width="200px" height="200px"></td>
