@@ -14,6 +14,7 @@ I copy pasted some of the code, so yeah.
 <br/><br/>
 <img src="Renders/MEGA.png" width="600px" height="300px">
 <table>
+  <tr><img src="Renders/MEGA.png" width="600px" height="300px"></tr>
   <tr>
     <td><img src="Renders/EX2.png" width="300px" height="300px"></td>
     <td><img src="Renders/EX3.png" width="300px" height="300px"></td>
