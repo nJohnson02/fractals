@@ -10,8 +10,8 @@ WIDTH = int(input('Width: '))
 HEIGHT = int(input('Height: '))
 x1 = float(input('Domain Start: '))
 x2 = float(input('Domain End: '))
-y1 = -1*float(input('Range Start: '))
-y2 = -1*float(input('Range End: '))
+y1 = float(input('Range Start: '))
+y2 = float(input('Range End: '))
 
 A = (x2 - x1)/WIDTH
 B = (y2 - y1)/HEIGHT
