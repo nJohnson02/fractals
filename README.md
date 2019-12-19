@@ -15,8 +15,8 @@ I copy pasted some of the code, so yeah.
 <img src="Renders/MEGA.png" width="600px" height="300px">
 <table>
   <tr>
-    <td><img src="Renders/EX1.png" width="300px" height="300px"></td>
-    <td><img src="Renders/EX2.png" width="300px" height="300px"></td>
-    <td><img src="Renders/EX3.png" width="300px" height="300px"></td>
+    <td><img src="Renders/EX1.png" width="200px" height="200px"></td>
+    <td><img src="Renders/EX2.png" width="200px" height="200px"></td>
+    <td><img src="Renders/EX3.png" width="200px" height="200px"></td>
   </tr>
 </table>
