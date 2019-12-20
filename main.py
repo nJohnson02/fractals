@@ -12,7 +12,6 @@ y1, y2 = -1*float(input('Range End: ')), -1*float(input('Range Start: '))
 
 A, B = (x2 - x1)/WIDTH, (y2 - y1)/HEIGHT
 
-# return a tuple of colors as rgb values
 def rgb_conv(i):
     color = 255 * array(colorsys.hsv_to_rgb(i / 255.0, 1.0, 0.5))
     return tuple(color.astype(int))
