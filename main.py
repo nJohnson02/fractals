@@ -8,7 +8,7 @@ FRACTAL = str(input('z = '))
 ITERATIONS = int(input('Iterations: '))
 WIDTH, HEIGHT = int(input('Width: ')), int(input('Height: '))
 x1, x2 = float(input('Domain Start: ')), float(input('Domain End: '))
-y1, y2 = -1*float(input('Range End: ')), -1*float(input('Range Start: '))
+y1, y2 = -1*float(input('Range Start: ')), -1*float(input('Range End: '))
 
 A, B = (x2 - x1)/WIDTH, (y2 - y1)/HEIGHT
 
