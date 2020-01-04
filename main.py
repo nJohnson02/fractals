@@ -11,6 +11,8 @@ WIDTH, HEIGHT = int(input('Width: ')), int(input('Height: '))
 GRID = str(input('Display Grid (y/n): '))
 if GRID == 'y':
     NUM = int(input('Grid Size: '))
+    GWIDTH = WIDTH/NUM
+    GHEIGHT = HEIGHT/NUM
 else:
     NUM = 1
 
@@ -27,7 +29,7 @@ def fractal(x, y):
     c = complex(x1+x*A, y1+y*B)
     c = c
     z = 0
-    if ((x%(img.size[0]/NUM)) != 0) and (((y%(img.size[1]/NUM)) != 0)) and (y != (y2/B)-1)  and (x != (x2/A)-1) or (GRID == 'n'):
+    if (x%(GWIDTH) > 1 or x%(GWIDTH) < -1) and (y%(GHEIGHT) > 1 or y%(GHEIGHT) < -1) and (y != (y2/B)-1)  and (x != (x2/A)-1) or (GRID == 'n'):
         for i in range(1, ITERATIONS):
             if abs(z) > 2: return rgb_conv(i)
             z = eval(FRACTAL)
@@ -44,3 +46,11 @@ for x in range(img.size[0]):
         pixels[x, y] = fractal(x, y)
 
 img.save("sample.png", "")
+
+f = open('sample.txt', 'w')
+f.write('Domain: [' + str(x1) + ', ' + str(x2) + ']\n')
+f.write('Range: [' + str(y1) + ', ' + str(y2) + ']\n')
+if GRID == 'y':
+    f.write('Grid Width: ' + str((x2-x1)/NUM) + '\n')
+    f.write('Grid Height: ' + str((-1*(y2-y1))/NUM) + '\n')
+f.close()
