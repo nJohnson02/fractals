@@ -8,6 +8,8 @@ print('Input Fractal in terms of z, reals, and c, complex:')
 FRACTAL = str(input('z = '))
 ITERATIONS = int(input('Iterations: '))
 WIDTH, HEIGHT = int(input('Width: ')), int(input('Height: '))
+x1, x2 = float(input('Domain Start: ')), float(input('Domain End: '))
+y1, y2 = -1 * float(input('Range Start: ')), -1 * float(input('Range End: '))
 GRID = str(input('Display Grid (y/n): '))
 if GRID == 'y':
     NUM = int(input('Grid Size: '))
@@ -15,9 +17,8 @@ if GRID == 'y':
     GHEIGHT = HEIGHT/NUM
 else:
     NUM = 1
-
-x1, x2 = float(input('Domain Start: ')), float(input('Domain End: '))
-y1, y2 = -1 * float(input('Range Start: ')), -1 * float(input('Range End: '))
+    GWIDTH = 1
+    GHEIGHT = 1
 
 A, B = (x2 - x1) / WIDTH, (y2 - y1) / HEIGHT
 
@@ -29,7 +30,7 @@ def fractal(x, y):
     c = complex(x1+x*A, y1+y*B)
     c = c
     z = 0
-    if (x%(GWIDTH) > 1 or x%(GWIDTH) < -1) and (y%(GHEIGHT) > 1 or y%(GHEIGHT) < -1) or (GRID == 'n'):
+    if (x%(GWIDTH) > 0.75 or x%(GWIDTH) < -0.75) and (y%(GHEIGHT) > 0.75 or y%(GHEIGHT) < -0.75) and (y != (y2/B)-1) and (x != (x2/A)-1) or (GRID == 'n'):
         for i in range(1, ITERATIONS):
             if abs(z) > 2: return rgb_conv(i)
             z = eval(FRACTAL)
