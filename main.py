@@ -19,14 +19,16 @@ def rgb_conv(i):
     return tuple(color.astype(int))
 
 def fractal(x, y):
-
-    z, c = 0, complex(x1 + x * A, y1 + y * B)
-    
-    for i in range(1, ITERATIONS):
-        if abs(z) > 2: return rgb_conv(i)
-        z = eval(FRACTAL) 
-
-    return (0, 0, 0)
+    c = complex(x1+x*A, y1+y*B)
+    c = c
+    z = 0
+    if ((x%(img.size[0]/5)) != 0) and ((y%(img.size[1]/5)) != 0) and y != -1*(y2)-50:
+        for i in range(1, ITERATIONS):
+            if abs(z) > 2: return rgb_conv(i)
+            z = eval(FRACTAL) 
+        return (0, 0, 0)
+    else:
+        return (200, 200, 200)
 
 img = Image.new('RGB', (WIDTH, HEIGHT))
 pixels = img.load()
