@@ -57,6 +57,8 @@ img.save("sample.png", "")
 # Text Output
 y1, y2 = -y1, -y2
 f = open('sample.txt', 'w')
+f.write("Fractal: z = " + FRACTAL + '\n')
+f.write("Resolution: " + str(WIDTH) + 'x' + str(HEIGHT) + '\n')
 f.write("Domain: [{}, {}]\n".format(str(x1), str(x2)))
 f.write("Range: [{}, {}]\n".format(str(y1), str(y2)))
 
