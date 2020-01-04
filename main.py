@@ -47,10 +47,12 @@ for x in range(img.size[0]):
 
 img.save("sample.png", "")
 
+y1 = y1*-1
+y2 = y2*-1
 f = open('sample.txt', 'w')
 f.write('Domain: [' + str(x1) + ', ' + str(x2) + ']\n')
 f.write('Range: [' + str(y1) + ', ' + str(y2) + ']\n')
 if GRID == 'y':
     f.write('Grid Width: ' + str((x2-x1)/NUM) + '\n')
-    f.write('Grid Height: ' + str((-1*(y2-y1))/NUM) + '\n')
+    f.write('Grid Height: ' + str((y2-y1)/NUM) + '\n')
 f.close()
