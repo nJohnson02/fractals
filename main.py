@@ -30,7 +30,7 @@ def fractal(x, y):
     c = complex(x1+x*A, y1+y*B)
     c = c
     z = 0
-    if (x%(GWIDTH) > 0.75 or x%(GWIDTH) < -0.75) and (y%(GHEIGHT) > 0.75 or y%(GHEIGHT) < -0.75) and (y != (y2/B)-1) and (x != (x2/A)-1) or (GRID == 'n'):
+    if (x%(GWIDTH) > 0.75 or x%(GWIDTH) < -0.75) and (y%(GHEIGHT) > 0.75 or y%(GHEIGHT) < -0.75) and (y != (HEIGHT)-1) and (x != (WIDTH)-1) or (GRID == 'n'):
         for i in range(1, ITERATIONS):
             if abs(z) > 2: return rgb_conv(i)
             z = eval(FRACTAL)
