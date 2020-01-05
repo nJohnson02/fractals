@@ -28,6 +28,7 @@ def rgb_conv(i):
     color = 255 * array(colorsys.hsv_to_rgb(i / 255.0, 1.0, 0.5))
     return tuple(color.astype(int))
 
+#Fractal Generator
 def fractal(x, y):
 
     z, c = 0, complex(x1+x*A, y1+y*B)
@@ -46,14 +47,14 @@ def fractal(x, y):
 img = Image.new('RGB', (WIDTH, HEIGHT))
 pixels = img.load()
 
-# Fractal generator
+# Image generator
 for x in range(img.size[0]):
     print("%.2f %%" % (x / WIDTH * 100.0))
     for y in range(img.size[1]): pixels[x, y] = fractal(x, y)
 
 img.save("sample.png", "")
 
-# Domain
+# Text Output
 y1, y2 = -y1, -y2
 f = open('sample.txt', 'w')
 f.write("Domain: [{}, {}]\n".format(str(x1), str(x2)))
