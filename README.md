@@ -26,6 +26,16 @@ $ pip install colorsys numpy Pillow
 | :---: |:---:|:---:|
 
 ## Contributors
-| <a href="https://github.com/Le-SirH" target="_blank">**Le-SirH**</a> | <a href="https://github.com/Dapp3rDuck" target="_blank">**Dapp3rDuck**</a> | <a href="https://github.com/RHarr6306" target="_blank">**RHarr6306**</a> |
-| :---: |:---:|:---:|
-|[![Le-SirH](https://avatars3.githubusercontent.com/u/46948579?s=460&v=4)](https://github.com/Le-SirH)|[![Dapp3rDuck](https://avatars1.githubusercontent.com/u/55905788?s=400&v=4)](https://github.com/Dapp3rDuck)|[![RHarr6306](https://avatars2.githubusercontent.com/u/55287042?s=460&v=4)](https://github.com/RHarr6306)|
+<table>
+  <tr>
+    <th><a href="https://github.com/Le-SirH" target="_blank"><b>Le-SirH</b></a></th>
+    <th><a href="https://github.com/Dapp3rDuck" target="_blank"><b>Dapp3rDuck</b></a></th>
+    <th><a href="https://github.com/RHarr6306" target="_blank"><b>RHarr6306</b></a></th>
+  </tr>
+  <tr>
+    <td><img width="267" src="https://avatars3.githubusercontent.com/u/46948579?s=460&v=4"></td>
+    <td><img width="267" src="https://avatars1.githubusercontent.com/u/55905788?s=400&v=4"></td>
+    <td><img width="267" src="https://avatars2.githubusercontent.com/u/55287042?s=460&v=4"></td>
+  </tr>
+</table>
+
