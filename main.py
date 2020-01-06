@@ -8,20 +8,22 @@ print('Input Fractal in terms of z, reals, and c, complex:')
 # Fractal basic info
 FRACTAL = str(input('z = '))
 ITERATIONS = int(input('Iterations: '))
-WIDTH, HEIGHT = int(input('Width: ')), int(input('Height: '))
 
 # Domain input
 x1, x2 = float(input('Domain Start: ')), float(input('Domain End: '))
 y1, y2 = -1 * float(input('Range Start: ')), -1 * float(input('Range End: '))
-A, B = (x2 - x1) / WIDTH, (y2 - y1) / HEIGHT
 
 # Grid
 GRID = str(input('Display Grid (y/n): '))
-NUM, GWIDTH, GHEIGHT = 1, 1, 1
+GWIDTH, GHEIGHT, ROWS, COLUMNS = 1, 1, 1, 1 
 
 if GRID == 'y':
-    GSIZE = str(input('Grid Size (Rows x Columns): '))
-    GWIDTH, GHEIGHT = WIDTH / int(GSIZE.split('x')[1]), HEIGHT / int(GSIZE.split('x')[0])
+    ROWS = int(input('Grid Rows: '))
+    COLUMNS = int(input('Grid Columns: '))
+
+WIDTH, HEIGHT = int(input('Width: ')), int(input('Height: '))
+A, B = (x2 - x1) / WIDTH, (y2 - y1) / HEIGHT
+GWIDTH, GHEIGHT = WIDTH/COLUMNS, HEIGHT/ROWS
 
 # Color converter
 def rgb_conv(i):
@@ -55,15 +57,16 @@ for x in range(img.size[0]):
 img.save("sample.png", "")
 
 # Text Output
-y1, y2 = -y1, -y2
+y1, y2 = -1*y1, -1*y2
 f = open('sample.txt', 'w')
 f.write("Fractal: z = " + FRACTAL + '\n')
-f.write("Resolution: " + str(WIDTH) + 'x' + str(HEIGHT) + '\n')
 f.write("Domain: [{}, {}]\n".format(str(x1), str(x2)))
 f.write("Range: [{}, {}]\n".format(str(y1), str(y2)))
 
 if GRID == 'y':
-    f.write("Grid Width: {}\n".format(str((x2-x1)/GWIDTH)))
-    f.write("Grid Height: {}\n".format(str((y2-y1)/GHEIGHT)))
+    f.write("Grid: " + str(ROWS) + 'x' + str(COLUMNS) + '\n')
+    f.write("Grid Cell Width: " + str((x2-x1)/COLUMNS) + '\n')
+    f.write("Grid Cell Height: " + str((y2-y1)/ROWS) + '\n')
 
+f.write("Resolution: " + str(WIDTH) + 'x' + str(HEIGHT) + '\n')
 f.close()
