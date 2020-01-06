@@ -20,8 +20,8 @@ GRID = str(input('Display Grid (y/n): '))
 NUM, GWIDTH, GHEIGHT = 1, 1, 1
 
 if GRID == 'y':
-    NUM = int(input('Grid Size: '))
-    GWIDTH, GHEIGHT = WIDTH / NUM, HEIGHT / NUM
+    GSIZE = str(input('Grid Size (LxW): '))
+    GWIDTH, GHEIGHT = WIDTH / int(GSIZE.split('x')[0]), HEIGHT / int(GSIZE.split('x')[1])
 
 # Color converter
 def rgb_conv(i):
