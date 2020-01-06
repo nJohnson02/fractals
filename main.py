@@ -20,8 +20,8 @@ GRID = str(input('Display Grid (y/n): '))
 NUM, GWIDTH, GHEIGHT = 1, 1, 1
 
 if GRID == 'y':
-    GSIZE = str(input('Grid Size (LxW): '))
-    GWIDTH, GHEIGHT = WIDTH / int(GSIZE.split('x')[0]), HEIGHT / int(GSIZE.split('x')[1])
+    GSIZE = str(input('Grid Size (RowsxColumns): '))
+    GWIDTH, GHEIGHT = WIDTH / int(GSIZE.split('x')[1]), HEIGHT / int(GSIZE.split('x')[0])
 
 # Color converter
 def rgb_conv(i):
@@ -34,7 +34,7 @@ def fractal(x, y):
     z, c = 0, complex(x1+x*A, y1+y*B)
     c = c
 
-    if (x%(GWIDTH) > 0.75 or x%(GWIDTH) < -0.75) and (y%(GHEIGHT) > 0.75 or y%(GHEIGHT) < -0.75) and (y != (HEIGHT)-1) and (x != (WIDTH)-1) or (GRID == 'n'):
+    if (x%(GWIDTH) > 0.75 or x%(GWIDTH) < -0.75) and (y%(GHEIGHT) > 0.75 or y%(GHEIGHT) < -0.75) and (y != (HEIGHT)-1) and (x != (WIDTH)-1) or (GRID != 'y'):
 
         for i in range(1, ITERATIONS):
             if abs(z) > 2: return rgb_conv(i)
@@ -63,7 +63,7 @@ f.write("Domain: [{}, {}]\n".format(str(x1), str(x2)))
 f.write("Range: [{}, {}]\n".format(str(y1), str(y2)))
 
 if GRID == 'y':
-    f.write("Grid Width: {}\n".format(str((x2-x1)/NUM)))
-    f.write("Grid Height: {}\n".format(str((y2-y1)/NUM)))
+    f.write("Grid Width: {}\n".format(str((x2-x1)/GWIDTH)))
+    f.write("Grid Height: {}\n".format(str((y2-y1)/GHEIGHT)))
 
 f.close()
