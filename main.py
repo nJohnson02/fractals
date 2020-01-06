@@ -20,7 +20,7 @@ GRID = str(input('Display Grid (y/n): '))
 NUM, GWIDTH, GHEIGHT = 1, 1, 1
 
 if GRID == 'y':
-    GSIZE = str(input('Grid Size (RowsxColumns): '))
+    GSIZE = str(input('Grid Size (Rows x Columns): '))
     GWIDTH, GHEIGHT = WIDTH / int(GSIZE.split('x')[1]), HEIGHT / int(GSIZE.split('x')[0])
 
 # Color converter
