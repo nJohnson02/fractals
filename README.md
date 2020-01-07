@@ -23,7 +23,6 @@ $ pip install colorsys numpy Pillow
 <img src="Renders/sample.png">
 <br/>
 
-| :---: |:---:|:---:|
 | <img src="Renders/EX4.png" width="200px" height="200px"> | <img src="Renders/EX2.png" width="200px" height="200px"> | <img src="Renders/EX3.png" width="200px" height="200px"> |
 
 ## Contributors
