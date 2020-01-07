@@ -20,9 +20,11 @@ $ git clone git@github.com:Dapp3rDuck/fractals.git
 $ pip install colorsys numpy Pillow
 ```
 <br/><br/>
-  <img src="Renders/sample.png">
-| <img src="Renders/EX4.png" width="200px" height="200px"> | <img src="Renders/EX2.png" width="200px" height="200px"> | <img src="Renders/EX3.png" width="200px" height="200px"> |
+<img src="Renders/sample.png">
+<br/>
+
 | :---: |:---:|:---:|
+| <img src="Renders/EX4.png" width="200px" height="200px"> | <img src="Renders/EX2.png" width="200px" height="200px"> | <img src="Renders/EX3.png" width="200px" height="200px"> |
 
 ## Contributors
 <table>
