@@ -70,3 +70,5 @@ if GRID == 'y':
 
 f.write("Resolution: " + str(WIDTH) + 'x' + str(HEIGHT) + '\n')
 f.close()
+
+#Yeet
