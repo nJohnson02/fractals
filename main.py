@@ -2,6 +2,7 @@ from PIL import Image
 from numpy import complex, array 
 import colorsys
 import math
+import sys
 
 print('Input Fractal in terms of z, reals, and c, complex:')
 
@@ -24,6 +25,17 @@ if GRID == 'y':
 WIDTH, HEIGHT = int(input('Width: ')), int(input('Height: '))
 A, B = (x2 - x1) / WIDTH, (y2 - y1) / HEIGHT
 GWIDTH, GHEIGHT = WIDTH/COLUMNS, HEIGHT/ROWS
+
+#Progress Bar
+def progress(count, total, status=''):
+    bar_len = 60
+    filled_len = int(round(bar_len * count / float(total)))
+
+    percents = round(100.0 * count / float(total), 1)
+    bar = '▒' * filled_len + '-' * (bar_len - filled_len)
+
+    sys.stdout.write('%s [%s] %s%s \r' % (status, bar, percents, '%'))
+    sys.stdout.flush()
 
 # Color converter
 def rgb_conv(i):
@@ -49,11 +61,13 @@ def fractal(x, y):
 img = Image.new('RGB', (WIDTH, HEIGHT))
 pixels = img.load()
 
-# Image generator
+# Image Output
 for x in range(img.size[0]):
-    print("%.2f %%" % (x / WIDTH * 100.0))
+    p = x / WIDTH * 100.0
+    progress(p, 100, 'Rendering...')
     for y in range(img.size[1]): pixels[x, y] = fractal(x, y)
 
+print()
 img.save("sample.png", "")
 
 # Text Output
