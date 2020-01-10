@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/build-passing-green/?style=flat-square)
 ![](https://img.shields.io/github/repo-size/Dapp3rDuck/fractals?style=flat-square)
 ![](https://img.shields.io/github/issues/Dapp3rDuck/fractals?style=flat-square)
-![](https://img.shields.io/github/v/release/Dapp3rDuck/fractals?include_prereleases&style=flat-square)
+![](https://img.shields.io/github/v/release/Dapp3rDuck/fractals?include_prereleases&style=flat-square)<br/>
 [![Run on Repl.it](https://repl.it/badge/github/Dapp3rDuck/fractals)](https://repl.it/github/Dapp3rDuck/fractals)
 
 * This script will prompt for in input of a fractal algorithym of the form `z = z**n + c`.
