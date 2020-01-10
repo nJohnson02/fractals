@@ -1,0 +1,7 @@
+Fractal: z = 1
+Domain: [0.0, 1.0]
+Range: [0.0, 1.0]
+Grid: 3x3
+Grid Cell Width: 0.3333333333333333
+Grid Cell Height: 0.3333333333333333
+Resolution: 500x500
