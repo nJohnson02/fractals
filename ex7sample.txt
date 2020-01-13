@@ -1,7 +1,0 @@
-Fractal: z = z**2 + c
-Domain: [-0.737465, -0.737456]
-Range: [0.183228, 0.183237]
-Grid: 5x5
-Grid Cell Width: 1.8000000000073513e-06
-Grid Cell Height: 1.8000000000018e-06
-Resolution: 300x300

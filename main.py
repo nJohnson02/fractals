@@ -12,7 +12,7 @@ ITERATIONS = int(input('Iterations: '))
 
 # Domain input
 x1, x2 = float(eval(str(input('Domain Start: ')))), float(eval(str(input('Domain End: '))))
-y1, y2 = -1 * float(eval(str(input('Range Start: ')))), -1 * float(eval(str(input('Range End: '))))
+y2, y1 = -1 * float(eval(str(input('Range Start: ')))), -1 * float(eval(str(input('Range End: '))))
 
 # Grid
 GRID = str(input('Display Grid (y/n): '))
