@@ -67,8 +67,6 @@ for x in range(img.size[0]):
     progress(p, 100, 'Rendering...')
     for y in range(img.size[1]): pixels[x, y] = fractal(x, y)
 
-progress(100, 100, 'Complete    ')
-print()
 img.save("sample.png", "")
 
 # Text Output
@@ -85,3 +83,6 @@ if GRID == 'y':
 
 f.write("Resolution: " + str(WIDTH) + 'x' + str(HEIGHT) + '\n')
 f.close()
+
+progress(100, 100, 'Complete    ')
+print()
