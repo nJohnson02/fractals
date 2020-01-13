@@ -11,8 +11,8 @@ FRACTAL = str(input('z = '))
 ITERATIONS = int(input('Iterations: '))
 
 # Domain input
-x1, x2 = float(input('Domain Start: ')), float(input('Domain End: '))
-y1, y2 = -1 * float(input('Range Start: ')), -1 * float(input('Range End: '))
+x1, x2 = float(eval(str(input('Domain Start: ')))), float(eval(str(input('Domain End: '))))
+y1, y2 = -1 * float(eval(str(input('Range Start: ')))), -1 * float(eval(str(input('Range End: '))))
 
 # Grid
 GRID = str(input('Display Grid (y/n): '))
