@@ -2,7 +2,9 @@
 ![](https://img.shields.io/badge/build-passing-green/?style=flat-square)
 ![](https://img.shields.io/github/repo-size/Dapp3rDuck/fractals?style=flat-square)
 ![](https://img.shields.io/github/issues/Dapp3rDuck/fractals?style=flat-square)
-![](https://img.shields.io/github/v/release/Dapp3rDuck/fractals?include_prereleases&style=flat-square)
+![](https://img.shields.io/github/v/release/Dapp3rDuck/fractals?include_prereleases&style=flat-square)<br/>
+
+<a href="https://github.com/Dapp3rDuck/fractals/releases/latest"><img width="15" height="15" src="https://i.ya-webdesign.com/images/download-icon-black-buttons-png-7.png"> Latest Release</a>
 
 * This script will prompt for in input of a fractal algorithym of the form `z = z^n + c`.
 * c is the independent complex variable, and z is the dependent variable, changed after each iteration.
