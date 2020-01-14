@@ -8,6 +8,7 @@ print('Input Fractal in terms of z, reals, and c, complex:')
 
 # Fractal basic info
 FRACTAL = str(input('z = '))
+FRACTAL.replace("^", "**")
 ITERATIONS = int(input('Iterations: '))
 
 # Domain input
