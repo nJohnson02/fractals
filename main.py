@@ -64,8 +64,7 @@ pixels = img.load()
 
 # Image Output
 for x in range(img.size[0]):
-    p = x / WIDTH * 100.0
-    progress(p, 100, 'Rendering...')
+    progress(x / WIDTH * 100.0, 100, 'Rendering...')
     for y in range(img.size[1]): pixels[x, y] = fractal(x, y)
 
 img.save("sample.png", "")
@@ -78,12 +77,11 @@ f.write("Domain: [{}, {}]\n".format(str(x1), str(x2)))
 f.write("Range: [{}, {}]\n".format(str(y1), str(y2)))
 
 if GRID == 'y':
-    f.write("Grid: " + str(ROWS) + 'x' + str(COLUMNS) + '\n')
-    f.write("Grid Cell Width: " + str((x2-x1)/COLUMNS) + '\n')
-    f.write("Grid Cell Height: " + str((y2-y1)/ROWS) + '\n')
+    f.write("Grid: {}x{}\n".format(str(ROWS), str(COLUMNS)))
+    f.write("Grid Cell width: {}\n".format(str((x2-x1)/COLUMS)))
+    f.write("Grid Cell Height: {}\n".format(str((y2-y1)/ROWS)))
 
-f.write("Resolution: " + str(WIDTH) + 'x' + str(HEIGHT) + '\n')
+f.write("Resolution: {}x{}\n".format(str(WIDTH), str(HEIGHT)))
 f.close()
 
-progress(100, 100, 'Complete    ')
-print()
+progress(100, 100, 'Complete\n')
