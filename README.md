@@ -23,7 +23,7 @@ $ pip install colorsys numpy Pillow
 <br/><br/>
 <img src="http://www.livepond.net/sites/fractals/example.png">
 <br/>
-<img src="http://www.livepond.net/sites/fractals/EX4.png" width="200px" height="200px">
+<img src="http://www.livepond.net/sites/fractals/EX6.png" width="200px" height="200px">
 <img src="http://www.livepond.net/sites/fractals/EX2.png" width="200px" height="200px">
 <img src="http://www.livepond.net/sites/fractals/EX3.png" width="200px" height="200px">
 
