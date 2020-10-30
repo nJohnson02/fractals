@@ -18,7 +18,7 @@
 
 ```
 $ git clone git@github.com:Dapp3rDuck/fractals.git
-$ pip install colorsys numpy Pillow
+$ pip install cpython numpy Pillow
 ```
 <br/><br/>
 <img src="http://www.livepond.net/sites/fractals/example.png">
