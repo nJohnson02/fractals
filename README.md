@@ -30,7 +30,7 @@ $ pip install cpython numpy Pillow
 ## Contributors
 <table>
   <tr>
-    <th><a href="https://github.com/Le-SirH" target="_blank"><b>Le-SirH</b></a></th>
+    <th><a href="https://github.com/ryan-harrington" target="_blank"><b>ryan-harrington</b></a></th>
     <th><a href="https://github.com/Dapp3rDuck" target="_blank"><b>Dapp3rDuck</b></a></th>
     <th><a href="https://github.com/RHarr6306" target="_blank"><b>RHarr6306</b></a></th>
   </tr>
